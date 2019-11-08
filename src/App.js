@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import SearchBar from './components/SearchBar';
+import Navbar from './components/navbar';
 
 class App extends Component {
   state = {
@@ -12,11 +13,12 @@ class App extends Component {
   }
   render(){
     
-    return (
-      <div className="App">
-        <img alt="deezer" src="/img/logo.png" className="logo"/>
-        <SearchBar />
-      </div>
+    return (     
+        <div className="App">
+          <Navbar />
+          <SearchBar />
+        </div>
+     
     );
   }
    

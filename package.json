@@ -12,9 +12,11 @@
     "lodash": "^4.17.15",
     "lodash.debounce": "^4.0.8",
     "react": "^16.11.0",
+    "react-app-polyfill": "^1.0.4",
     "react-dom": "^16.11.0",
     "react-infinite-scroll-component": "^5.0.2",
     "react-resizable-table": "^0.1.0",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "^3.2.0",
     "reselect": "^4.0.0",
     "styled-components": "^4.4.1",
@@ -33,7 +35,8 @@
     "production": [
       ">0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "ie >= 9"
     ],
     "development": [
       "last 1 chrome version",

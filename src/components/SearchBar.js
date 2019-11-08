@@ -4,7 +4,7 @@ import SongsList from './SongsList';
 import debounce from "lodash.debounce";
 
 
-const API_URL = 'https://api.deezer.com/search/track'
+const API_URL = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track'
 
 class SearchBar extends Component{
   constructor(props){
@@ -34,14 +34,6 @@ class SearchBar extends Component{
       
       if (getScrollTop() < getDocumentHeight() - window.innerHeight) return;
 	      loadSongs();
-
-      /*if (
-        window.innerHeight + document.documentElement.scrollTop
-        === document.documentElement.offsetHeight
-      ) {
-          console.log("loading more songs...")
-        loadSongs();
-      }*/
     }, 100);
   } 
   getScrollTop = () => {
