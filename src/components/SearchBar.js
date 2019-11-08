@@ -58,7 +58,7 @@ class SearchBar extends Component{
         newIndex = this.state.results.length
     this.setState({ isLoading: true})
     if (this.state.next !== null){
-      axios.get(this.state.next)
+      axios.get("https://cors-anywhere.herokuapp.com/"+this.state.next)
       .then(({ data }) => {
         this.setState({ 
           hasMore: data.next ? true : false,
