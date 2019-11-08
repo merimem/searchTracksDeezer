@@ -130,7 +130,7 @@ handleSubmit = (e) => {
       return() => cancel() 
     }  
     render() {
-      let tracks= this.state.total? this.state.total+" tracks" : ""
+      let tracks= this.state.total? this.state.total+" Tracks" : ""
       let  isLoading = this.state.isLoading === true ?  
         <div className="progress">
             <div className="indeterminate"></div>
