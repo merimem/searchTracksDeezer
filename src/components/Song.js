@@ -4,10 +4,10 @@ import React from 'react'
     return (
         
         <tr>           
-            <td><img alt="" src={props.song.artist.picture_small}/></td>
-            <td>{props.song.artist.name}</td>
-            <td>{props.song.title}</td>
-            <td>{props.song.album.title}</td>    
+            <td className="col s12 m6 l3"><img alt="" src={props.song.artist.picture_small}/></td>
+            <td className="col s12 m6 l3">{props.song.artist.name}</td>
+            <td className="col s12 m6 l3">{props.song.title}</td>
+            <td className="col s12 m6 l3">{props.song.album.title}</td>    
         </tr>
     )
 }

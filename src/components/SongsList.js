@@ -60,7 +60,7 @@ class SongsList extends Component{
         return (
             <div className="datagrid" key ="datagrid">
                 <div className="myTable">
-                <ResizableTable >
+                <ResizableTable  >
                     <table width="100%" border="0" id="resizableTable" className = "striped">
                         <thead>
                             <tr>

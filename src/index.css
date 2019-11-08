@@ -8,9 +8,13 @@ body {
   
 }
 .logo{
-	width: 10%;
+	width: 15%;
     margin: 0 auto;
-    display: block;
+	margin-top: 10px;
+
+}
+.navbar{
+	display: inline-grid;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -52,7 +56,8 @@ table {
 
 table td {
 	word-wrap: break-word;        
-	overflow-wrap: break-word;     
+	overflow-wrap: break-word;  
+	overflow: hidden;   
 }
 .myTable table td{
 	
@@ -83,7 +88,6 @@ table td {
 }
 
 #resizableTable, th::before {
-	cursor: col-resize;
 	-webkit-user-select: none;
 	   -moz-user-select: none;
 		-ms-user-select: none;

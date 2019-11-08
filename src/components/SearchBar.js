@@ -117,15 +117,13 @@ handleSubmit = (e) => {
           q: `${this.state.query}` 
         },
         cancelToken: new axios.CancelToken(c => cancel =c)
-      }).then(({ data }) => {   
-        console.log("seting next for the 1st time: ", (data.next) ? data.next : null ) 
+      }).then(({ data }) => {        
           this.setState({
             results: data.data,
             songs: data.data.slice(0, this.state.per),
             next: (data.next) ? data.next : null,
             total: data.total
-          })
-          console.log("state updated", this.state)
+          })         
       }).catch(e => {
         if (axios.isCancel(e)) return
       })
@@ -142,7 +140,7 @@ handleSubmit = (e) => {
         <div>
         <form id="autocomplete-input" onSubmit={this.handleSubmit}>  
             <input
-              placeholder="Search for..."
+              placeholder="Search for track..."
               ref={input => this.search = input}
               onChange={this.handleInputChange}
             
