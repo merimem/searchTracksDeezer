@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import SearchBar from './components/SearchBar';
 
 class App extends Component {
@@ -15,10 +14,8 @@ class App extends Component {
     
     return (
       <div className="App">
-      <img alt="deezer" src="/img/logo.png" className="logo"/>
-       
+        <img alt="deezer" src="/img/logo.png" className="logo"/>
         <SearchBar />
-        
       </div>
     );
   }

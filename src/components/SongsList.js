@@ -7,7 +7,6 @@ class SongsList extends Component{
     constructor(props) {
         super(props);
         
-        // Sets up our initial state
         this.state = {
             columnToSort: '',
             sortDirection: 'default',           
@@ -66,7 +65,7 @@ class SongsList extends Component{
                         <thead>
                             <tr>
                                 {header.map((x, i) => (
-                                    <th className="firstRow" key={`thc-${i}`} ><ResizingIcon /><div onClick={()=> this.handleSort(x.prop)}>{x.name}</div></th>
+                                    <th className="firstRow col s12 m6" key={`thc-${i}`} ><ResizingIcon /><div onClick={()=> this.handleSort(x.prop)}>{x.name}</div></th>
                                 ))}
                             </tr>
                         </thead>

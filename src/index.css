@@ -8,7 +8,9 @@ body {
   
 }
 .logo{
-	width: 10%
+	width: 10%;
+    margin: 0 auto;
+    display: block;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -90,6 +92,9 @@ table td {
 
   .tracks{
 	font-weight: 900;
+	display: block;
+    margin: 0 auto;
+    width: 50%;
   }
   form {
 	margin: 0px auto;
